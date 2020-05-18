@@ -272,7 +272,7 @@ namespace ObjectComparer
             {
                 return new ListComparator();
             }
-            else if (propertyType.IsClass || propertyType.IsValueType) //Here value type is to compare Structs like KeyValuePair<K,V> , DateTime
+            else if (propertyType.IsClass || propertyType.IsValueType) //Here value type is to compare Structs like KeyValuePair<K,V> who does not implements comparable interface
             {
                 return new ClassComparator();
             }

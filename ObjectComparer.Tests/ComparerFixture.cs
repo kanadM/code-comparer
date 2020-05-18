@@ -12,7 +12,6 @@ namespace ObjectComparer.Tests
         public void Null_values_are_similar_test()
         {
             string first = null, second = null;
-            //Dictionary<string, string> first = null, second = null;
             Assert.IsTrue(Comparer.AreSimilar(first, second));
         }
 
